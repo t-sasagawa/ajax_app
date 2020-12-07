@@ -13,7 +13,7 @@ function check() {
       // ここにクリックした時に行う「何らかの処理」を記述していく
       const postId = post.getAttribute("data-id");
       const XHR = new XMLHttpRequest();
-      XHR.open ("GET", `/posts／${postId}`, true);
+      XHR.open ("GET", `/posts/${postId}`, true);
       XHR.responseType = "json";
       XHR.send();
       XHR.onload = () => {
